@@ -3,239 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مهرجان تجمع فان كوخ - طاهر دوهان</title>
+    <title>الموقع متوقف</title>
     <style>
-        :root { --primary: #0f172a; --accent: #b45309; --bg: #f1f5f9; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); margin: 0; padding: 10px; color: #1e293b; text-align: right; }
-        .container { max-width: 600px; background: #ffffff; margin: 10px auto; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 8px solid var(--primary); }
-        
-        .header { text-align: center; margin-bottom: 20px; }
-        .header h1 { color: var(--primary); font-size: 22px; margin: 0; }
-        .header p { color: var(--accent); font-weight: bold; margin: 5px 0; }
-
-        .conditions-box { background: #fff7ed; border: 1px solid #ffedd5; padding: 15px; border-radius: 10px; margin-bottom: 20px; font-size: 13px; }
-        .conditions-box h3 { margin: 0 0 10px 0; color: #9a3412; font-size: 15px; }
-        .agree-check { display: flex; align-items: center; gap: 10px; background: #e2e8f0; padding: 10px; border-radius: 8px; cursor: pointer; font-weight: bold; }
-
-        .countdown-wrap { background: var(--primary); color: #fff; padding: 15px; border-radius: 12px; text-align: center; margin-bottom: 20px; }
-        .timer-grid { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
-        .t-box { background: rgba(255,255,255,0.1); padding: 8px; border-radius: 8px; min-width: 55px; }
-        .t-box span { display: block; font-size: 18px; font-weight: bold; }
-        .t-label { font-size: 10px; }
-
-        .section-title { background: #f8fafc; padding: 8px; border-right: 4px solid var(--accent); margin: 20px 0 10px; font-weight: bold; color: var(--primary); }
-        .form-group { margin-bottom: 12px; }
-        label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 14px; }
-        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 15px; }
-        
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        @media (max-width: 500px) { .grid { grid-template-columns: 1fr; } }
-
-        .btn-submit { width: 100%; background: #25d366; color: white; padding: 15px; border: none; border-radius: 10px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
-        .btn-submit:hover { background: #128c7e; }
-        .btn-submit:disabled { background: #94a3b8; cursor: not-allowed; }
-        
-        #id_num_container { display: none; margin-top: 10px; border: 1px dashed var(--accent); padding: 10px; border-radius: 8px; background: #fffcf5; }
-        #status { text-align: center; margin-top: 15px; font-weight: bold; display: none; padding: 10px; border-radius: 8px; }
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 8px solid #e74c3c;
+            max-width: 80%;
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .icon {
+            font-size: 60px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="header">
-        <h1>مهرجان تجمع فان كوخ الفني</h1>
-        <p>بإشراف  طاهر دوهان</p>
+    <div class="container">
+        <div class="icon">⚠️</div>
+        <h1>عذراً، الموقع متوقف حالياً</h1>
+        <p>تم إيقاف خدمات هذا الموقع مؤقتاً بسبب عدم سداد المستحقات المالية (الأجور).</p>
+        <p style="font-size: 16px; color: #888;">يرجى التواصل 07823464275 طاهر دوهان لإعادة التفعيل..</p>
     </div>
-
-    <!-- قسم الشروط -->
-    <div class="conditions-box">
-        <h3>⚠️ تعليمات التسجيل</h3>
-        <p>يرجى العلم أنه بعد الضغط على "إرسال"، سيقوم الموقع بتحويلك لتطبيق الواتساب الخاص بك لتأكيد إرسال بياناتك للأستاذ طاهر.</p>
-        <label class="agree-check">
-            <input type="checkbox" id="master_agree">
-            <span>أوافق على الشروط وصحة بياناتي</span>
-        </label>
-    </div>
-
-    <!-- العداد التنازلي -->
-    <div class="countdown-wrap">
-        <div id="target-title" style="font-size: 13px;">المتبقي على انطلاق المهرجان (5 تموز)</div>
-        <div class="timer-grid">
-            <div class="t-box"><span id="days">0</span><div class="t-label">يوم</div></div>
-            <div class="t-box"><span id="hours">0</span><div class="t-label">ساعة</div></div>
-            <div class="t-box"><span id="minutes">0</span><div class="t-label">دقيقة</div></div>
-            <div class="t-box"><span id="seconds">0</span><div class="t-label">ثانية</div></div>
-        </div>
-    </div>
-
-    <form id="artForm">
-        <div class="section-title">👤 البيانات الشخصية</div>
-        <div class="form-group">
-            <label>الاسم الثلاثي للفنان:</label>
-            <input type="text" id="name" required>
-        </div>
-        <div class="grid">
-            <div class="form-group">
-                <label>رقم الهاتف:</label>
-                <input type="tel" id="phone" required placeholder="07xxxxxxxxx">
-            </div>
-            <div class="form-group">
-                <label>المحافظة:</label>
-                <input type="text" id="city" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <label>حسابات التواصل (انستكرام ):</label>
-            <input type="text" id="social" required placeholder="مثال: @t2.4ll">
-        </div>
-
-        <div class="section-title">🎨 تفاصيل العمل الفني</div>
-        <div class="grid">
-            <div class="form-group">
-                <label>نوع المشاركة:</label>
-                <select id="type" required>
-                    <option value="">اختر النوع...</option>
-                    <option value="لوحة فنية">لوحة فنية</option>
-                    <option value="تصوير">تصوير</option>
-                    <option value="خط عربي">خط عربي</option>
-                    <option value="نحت">نحت</option>
-                    <option value="تصميم">تصميم</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>عنوان العمل:</label>
-                <input type="text" id="work_title" required>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="form-group">
-                <label>القياس (مثلاً 50x70):</label>
-                <input type="text" id="size" required>
-            </div>
-            <div class="form-group">
-                <label>رفع صورة العمل (اختياري):</label>
-                <input type="file" id="artwork_file" accept="image/*">
-            </div>
-        </div>
-
-        <div class="section-title">🛡️ أسئلة إضافية</div>
-        <div class="form-group">
-            <label>هل شاركت سابقاً في المهرجان؟</label>
-            <select id="prev_part">
-                <option value="لا">لا</option>
-                <option value="نعم">نعم</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>هل تملك هوية تجمع فان كوخ؟</label>
-            <select id="has_id" onchange="toggleId()">
-                <option value="لا">لا</option>
-                <option value="نعم">نعم</option>
-            </select>
-        </div>
-        <div id="id_num_container">
-            <label>رقم هوية التجمع:</label>
-            <input type="text" id="id_number">
-        </div>
-
-        <button type="submit" class="btn-submit" id="submitBtn">إرسال المشاركة الآن</button>
-        <div id="status"></div>
-    </form>
-</div>
-
-<script>
-    // إعدادات البوت والواتساب
-    const TOKEN = '8982595964:AAE0M14bJX2pcy041A7cuy8C9CpnGZ8lCu4';
-    const CHAT_ID = '395764615';
-    const ADMIN_WHATSAPP = '9647823464275'; // تم وضع رقمك هنا بنجاح
-
-    function toggleId() {
-        const hasId = document.getElementById('has_id').value;
-        document.getElementById('id_num_container').style.display = (hasId === 'نعم') ? 'block' : 'none';
-    }
-
-    // برمجة العداد
-    function updateTimer() {
-        const target = new Date("July 5, 2026 00:00:00").getTime();
-        const now = new Date().getTime();
-        const diff = target - now;
-        if (diff > 0) {
-            document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-            document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
-        }
-    }
-    setInterval(updateTimer, 1000);
-    updateTimer();
-
-    // معالجة الإرسال
-    document.getElementById('artForm').onsubmit = async function(e) {
-        e.preventDefault();
-        
-        if(!document.getElementById('master_agree').checked) {
-            alert("يرجى الموافقة على الشروط أولاً");
-            return;
-        }
-
-        const btn = document.getElementById('submitBtn');
-        const status = document.getElementById('status');
-        btn.disabled = true;
-        status.style.display = "block";
-        status.style.background = "#f1f5f9";
-        status.innerText = "⏳ جاري إرسال بياناتك...";
-
-        const formData = {
-            name: document.getElementById('name').value,
-            phone: document.getElementById('phone').value,
-            city: document.getElementById('city').value,
-            work: document.getElementById('work_title').value,
-            type: document.getElementById('type').value,
-            size: document.getElementById('size').value,
-            social: document.getElementById('social').value,
-            prev: document.getElementById('prev_part').value,
-            hasId: document.getElementById('has_id').value,
-            idNum: document.getElementById('id_number').value || 'لا يوجد'
-        };
-
-        const messageText = `🎨 مشاركة جديدة في مهرجان فان كوخ\n------------------\n👤 الفنان: ${formData.name}\n📞 الهاتف: ${formData.phone}\n📍 المحافظة: ${formData.city}\n🔗 التواصل: ${formData.social}\n🖼️ العمل: ${formData.work}\n🎭 النوع: ${formData.type}\n📏 القياس: ${formData.size}\n✅ مشاركة سابقة: ${formData.prev}\n🆔 هوية: ${formData.hasId} (${formData.idNum})`;
-
-        try {
-            // إرسال للتليجرام
-            await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({ chat_id: CHAT_ID, text: messageText })
-            });
-
-            // إرسال الصورة للتليجرام إن وجدت
-            const fileInput = document.getElementById('artwork_file');
-            if (fileInput.files.length > 0) {
-                const imgData = new FormData();
-                imgData.append('chat_id', CHAT_ID);
-                imgData.append('photo', fileInput.files[0]);
-                imgData.append('caption', `عمل الفنان: ${formData.name}`);
-                await fetch(`https://api.telegram.org/bot${TOKEN}/sendPhoto`, { method: 'POST', body: imgData });
-            }
-
-            // التحويل للواتساب
-            status.style.background = "#dcfce7";
-            status.innerText = "✅ تم الإرسال للتليجرام! يتم الآن فتح واتساب لتأكيد الطلب...";
-            
-            const waUrl = `https://wa.me/${ADMIN_WHATSAPP}?text=${encodeURIComponent(messageText)}`;
-            
-            setTimeout(() => {
-                window.location.href = waUrl;
-                btn.disabled = false;
-            }, 1500);
-
-        } catch (err) {
-            status.style.background = "#fee2e2";
-            status.innerText = "❌ فشل الإرسال، تأكد من الإنترنت وحاول مجدداً.";
-            btn.disabled = false;
-        }
-    };
-</script>
 
 </body>
 </html>
